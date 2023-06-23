@@ -1,21 +1,23 @@
-import React from 'react'
-import Footer from './Footer'
+import React from 'react';
+// import { BrowserRouter as Router, Route, Switch, Routes } from 'react-router-dom';
+import Footer from './Footer';
 import Navbar from './Navbar';
 import Header from './Header';
 import EmployeePage from './EmployeePage';
-import TeamSection from './TeamSection';
+import YouTubeVideos from './Youtube';
 import { Fragment } from 'react';
 
 function Landing() {
   return (
-    <Fragment>
-    <Navbar/>
-    <Header/>
-  <EmployeePage/>
-    {/* <TeamSection/> */}
-    <Footer/>
-    </Fragment>
-  )
+   
+      <Fragment>
+        <Navbar/>
+        <Header/>
+        <EmployeePage/>
+        <YouTubeVideos/>
+        <Footer />
+      </Fragment>
+  );
 }
 
 export default Landing;
